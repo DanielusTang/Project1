@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #500000; 
+    --secondary-color: #333;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --light-bg: #fff;
+    --accent-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0; /* Reduced padding for cleaner header */
+}
+
+/* Flex container for Header */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.branding {
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-style: italic;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+nav {
+    background: transparent; /* Removed separate background */
+    color: #fff;
+    padding: 0.5rem 0;
+    /* Removed sticky and fixed position styles */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+section {
+    background: var(--light-bg);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media(min-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.project-card, .service-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fafafa;
+    border-radius: 4px;
+}
+
+.project-card h3, .service-card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #7a0000;
+}
+
+/* Flex layout for service cards image + text */
+.service-flex {
+    display: flex;
+    flex-direction: column; /* Default stack on mobile */
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.service-flex img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media(min-width: 768px) {
+    .service-flex {
+        flex-direction: row; /* Side by side on desktop */
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .service-text {
+        flex: 1; /* Takes available space */
+        padding-right: 20px;
+    }
+    
+    .service-img {
+        flex: 0 0 320px; /* Fixed width container for the image */
+        text-align: right;
+    }
+
+    .service-flex img {
+        max-width: 100%; /* Image will fit within the 320px container */
+    }
+}
