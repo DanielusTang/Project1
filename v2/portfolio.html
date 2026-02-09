@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Tang | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="sidebar">
+        <div class="branding">
+            <h1>Daniel Tang</h1>
+            <p>From Concept to Deployed System</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="qualifications.html">Qualifications</a>
+            <a href="service.html">Service</a>
+            <a href="gen-ai.html">Gen AI</a>
+            <a href="../v1/index.html" class="version-btn">Switch to V1</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section>
+            <h2>My Projects</h2>
+            <p>My portfolio is built on a philosophy of designing for scale and fostering community. Here are some of the projects I have worked on or am currently planning.</p>
+            
+            <div class="project-card">
+                <h3>Enterprise Food Delivery Management System</h3>
+                <p><strong>Goal:</strong> Replace the current Aggie Dining page with a high-concurrency ordering platform.</p>
+                <p><strong>Key Technologies:</strong> Spring Boot, MySQL, Redis (Caching), WebSockets, Spring Task, Nginx.</p>
+                <p>This end-to-end exercise targets the critical "Hot Key" problem in database management and utilizes a multi-layered caching strategy to ensure speed and consistency. It features real-time order notifications for merchants and automated background jobs for order management.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>"Bridge" - Supportive Social Platform</h3>
+                <p><strong>Goal:</strong> A platform for students to share supportive prayers and messages for professors, fostering constructive dialogue.</p>
+                <p><strong>Key Technologies:</strong> React (Frontend), Spring Boot (Backend), RBAC (Security).</p>
+                <p>Motivated by a vision to reduce polarization on campus, this project focuses on designing a safe, well-moderated environment. It involves implementing secure user authentication, role-based access control, and anonymous posting features to ensure privacy and positive engagement.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Daniel Tang.</p>
+        </footer>
+    </main>
+
+</body>
+</html>

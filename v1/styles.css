@@ -190,3 +190,57 @@ footer {
         max-width: 100%; /* Image will fit within the 320px container */
     }
 }
+
+/* Version Switch Button */
+.version-btn {
+    background-color: #fff;
+    color: var(--primary-color) !important;
+    border: 1px solid #fff;
+    margin-left: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.5rem 1rem !important;
+}
+
+.version-btn:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+/* Contact Section Styles */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-list li {
+    flex: 1;
+    min-width: 150px;
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.contact-list li:hover {
+    transform: translateY(-5px);
+}
+
+.contact-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Make the whole text area clickable-ish */
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
